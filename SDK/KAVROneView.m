@@ -45,6 +45,7 @@
     
     [self.layer addSublayer:_glkView.layer];
     
+    // disable color managment for the context, this ensures proper display of our filter output
     _ciContext = [CIContext contextWithEAGLContext:_eaglContext options:@{kCIContextWorkingColorSpace : [NSNull null]} ];
     
     [_glkView bindDrawable];

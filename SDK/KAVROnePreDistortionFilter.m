@@ -34,6 +34,8 @@ static CIImage *LuT_YR = nil;
     dispatch_once(&once, ^{
         NSObject *null = [NSNull null];
         
+        // important to disable color management when creating LuTs, otherwise sampling inside the kernel will give false results
+
         UIImage *img = [UIImage imageNamed:@"LUT_XB"];
         LuT_XB = [CIImage imageWithCGImage:img.CGImage options:@{kCIImageColorSpace: null}];
         
