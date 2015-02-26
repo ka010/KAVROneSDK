@@ -14,7 +14,7 @@
 
 @property(nonatomic,assign,setter=setSplitViewEnabled:) BOOL isSplitViewEnabled;    // toggle split-view
 
-// update display with CIImage
--(void)displayFrame:(CIImage*)frame;
+-(void)displayFrame:(CIImage*)frame; // update display with CIImage
+
 
 @end

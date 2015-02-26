@@ -56,6 +56,7 @@
     
 }
 
+// apply pre-distortion to a given image, set mirror flag for right eye view
 -(CIImage*)_applyPreDistortionForImage:(CIImage*)input mirror:(BOOL)mirror{
     CIImage *result;
     _preDistortionFilter.inputImage = input;
@@ -86,6 +87,7 @@
 }
 
 
+
 #pragma mark - Public
 
 -(void)displayFrame:(CIImage*)frame {
@@ -102,7 +104,7 @@
     
     
     if (!_isSplitViewEnabled) {
-        [_ciContext drawImage:_inFrame inRect:_glkViewBounds fromRect:_inFrame.extent];
+        [_ciContext drawImage:_inFrame inRect:_glkViewBounds fromRect:_inFrame.extent]; // draw fullscreen frame, pre-distortion disabled
     }else {
         [self _drawLeftEye];    // draw the left eye frame at half the view width
         

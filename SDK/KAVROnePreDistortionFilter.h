@@ -14,7 +14,7 @@
 
 @interface KAVROnePreDistortionFilter : CIFilter
 
-@property (nonatomic,strong) CIImage *inputImage;
+@property (nonatomic,strong) CIImage *inputImage; 
 
 @property (nonatomic,assign) BOOL mirrorFlag; // NO = left eye | YES = right eye
 
