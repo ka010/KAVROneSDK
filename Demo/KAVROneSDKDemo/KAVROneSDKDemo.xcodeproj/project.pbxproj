@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4E45E6EA1A9EDE5D00E10648 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E45E6E91A9EDE5D00E10648 /* main.m */; };
+		4E45E6ED1A9EDE5D00E10648 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E45E6EC1A9EDE5D00E10648 /* AppDelegate.m */; };
+		4E45E6F01A9EDE5D00E10648 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E45E6EF1A9EDE5D00E10648 /* ViewController.m */; };
+		4E45E6F31A9EDE5D00E10648 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E45E6F11A9EDE5D00E10648 /* Main.storyboard */; };
+		4E45E6F51A9EDE5D00E10648 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E45E6F41A9EDE5D00E10648 /* Images.xcassets */; };
+		4E45E6F81A9EDE5D00E10648 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E45E6F61A9EDE5D00E10648 /* LaunchScreen.xib */; };
+		4E45E7041A9EDE5D00E10648 /* KAVROneSDKDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E45E7031A9EDE5D00E10648 /* KAVROneSDKDemoTests.m */; };
+		4E45E7321A9EE90E00E10648 /* KAVROnePreDistortionFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E45E7261A9EE90E00E10648 /* KAVROnePreDistortionFilter.m */; };
+		4E45E7331A9EE90E00E10648 /* KAVROneView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E45E7281A9EE90E00E10648 /* KAVROneView.m */; };
+		4E45E7341A9EE90E00E10648 /* LUT_XB.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E45E72A1A9EE90E00E10648 /* LUT_XB.png */; };
+		4E45E7351A9EE90E00E10648 /* LUT_XG.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E45E72B1A9EE90E00E10648 /* LUT_XG.png */; };
+		4E45E7361A9EE90E00E10648 /* LUT_XR.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E45E72C1A9EE90E00E10648 /* LUT_XR.png */; };
+		4E45E7371A9EE90E00E10648 /* LUT_YB.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E45E72D1A9EE90E00E10648 /* LUT_YB.png */; };
+		4E45E7381A9EE90E00E10648 /* LUT_YG.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E45E72E1A9EE90E00E10648 /* LUT_YG.png */; };
+		4E45E7391A9EE90E00E10648 /* LUT_YR.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E45E72F1A9EE90E00E10648 /* LUT_YR.png */; };
+		4E45E73A1A9EE90E00E10648 /* vrOneLuTDistortion.kernel in Resources */ = {isa = PBXBuildFile; fileRef = 4E45E7311A9EE90E00E10648 /* vrOneLuTDistortion.kernel */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4E45E6FE1A9EDE5D00E10648 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E45E6DC1A9EDE5D00E10648 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E45E6E31A9EDE5D00E10648;
+			remoteInfo = KAVROneSDKDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4E45E6E41A9EDE5D00E10648 /* KAVROneSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KAVROneSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E45E6E81A9EDE5D00E10648 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E45E6E91A9EDE5D00E10648 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4E45E6EB1A9EDE5D00E10648 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4E45E6EC1A9EDE5D00E10648 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4E45E6EE1A9EDE5D00E10648 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4E45E6EF1A9EDE5D00E10648 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4E45E6F21A9EDE5D00E10648 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4E45E6F41A9EDE5D00E10648 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4E45E6F71A9EDE5D00E10648 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		4E45E6FD1A9EDE5D00E10648 /* KAVROneSDKDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KAVROneSDKDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E45E7021A9EDE5D00E10648 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E45E7031A9EDE5D00E10648 /* KAVROneSDKDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KAVROneSDKDemoTests.m; sourceTree = "<group>"; };
+		4E45E7251A9EE90E00E10648 /* KAVROnePreDistortionFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KAVROnePreDistortionFilter.h; sourceTree = "<group>"; };
+		4E45E7261A9EE90E00E10648 /* KAVROnePreDistortionFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KAVROnePreDistortionFilter.m; sourceTree = "<group>"; };
+		4E45E7271A9EE90E00E10648 /* KAVROneView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KAVROneView.h; sourceTree = "<group>"; };
+		4E45E7281A9EE90E00E10648 /* KAVROneView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KAVROneView.m; sourceTree = "<group>"; };
+		4E45E72A1A9EE90E00E10648 /* LUT_XB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LUT_XB.png; sourceTree = "<group>"; };
+		4E45E72B1A9EE90E00E10648 /* LUT_XG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LUT_XG.png; sourceTree = "<group>"; };
+		4E45E72C1A9EE90E00E10648 /* LUT_XR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LUT_XR.png; sourceTree = "<group>"; };
+		4E45E72D1A9EE90E00E10648 /* LUT_YB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LUT_YB.png; sourceTree = "<group>"; };
+		4E45E72E1A9EE90E00E10648 /* LUT_YG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LUT_YG.png; sourceTree = "<group>"; };
+		4E45E72F1A9EE90E00E10648 /* LUT_YR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LUT_YR.png; sourceTree = "<group>"; };
+		4E45E7311A9EE90E00E10648 /* vrOneLuTDistortion.kernel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vrOneLuTDistortion.kernel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4E45E6E11A9EDE5D00E10648 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E45E6FA1A9EDE5D00E10648 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4E45E6DB1A9EDE5D00E10648 = {
+			isa = PBXGroup;
+			children = (
+				4E45E6E61A9EDE5D00E10648 /* KAVROneSDKDemo */,
+				4E45E7001A9EDE5D00E10648 /* KAVROneSDKDemoTests */,
+				4E45E6E51A9EDE5D00E10648 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4E45E6E51A9EDE5D00E10648 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4E45E6E41A9EDE5D00E10648 /* KAVROneSDKDemo.app */,
+				4E45E6FD1A9EDE5D00E10648 /* KAVROneSDKDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4E45E6E61A9EDE5D00E10648 /* KAVROneSDKDemo */ = {
+			isa = PBXGroup;
+			children = (
+				4E45E7241A9EE90E00E10648 /* SDK */,
+				4E45E6EB1A9EDE5D00E10648 /* AppDelegate.h */,
+				4E45E6EC1A9EDE5D00E10648 /* AppDelegate.m */,
+				4E45E6EE1A9EDE5D00E10648 /* ViewController.h */,
+				4E45E6EF1A9EDE5D00E10648 /* ViewController.m */,
+				4E45E6F11A9EDE5D00E10648 /* Main.storyboard */,
+				4E45E6F41A9EDE5D00E10648 /* Images.xcassets */,
+				4E45E6F61A9EDE5D00E10648 /* LaunchScreen.xib */,
+				4E45E6E71A9EDE5D00E10648 /* Supporting Files */,
+			);
+			path = KAVROneSDKDemo;
+			sourceTree = "<group>";
+		};
+		4E45E6E71A9EDE5D00E10648 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4E45E6E81A9EDE5D00E10648 /* Info.plist */,
+				4E45E6E91A9EDE5D00E10648 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4E45E7001A9EDE5D00E10648 /* KAVROneSDKDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				4E45E7031A9EDE5D00E10648 /* KAVROneSDKDemoTests.m */,
+				4E45E7011A9EDE5D00E10648 /* Supporting Files */,
+			);
+			path = KAVROneSDKDemoTests;
+			sourceTree = "<group>";
+		};
+		4E45E7011A9EDE5D00E10648 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4E45E7021A9EDE5D00E10648 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4E45E7241A9EE90E00E10648 /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				4E45E7251A9EE90E00E10648 /* KAVROnePreDistortionFilter.h */,
+				4E45E7261A9EE90E00E10648 /* KAVROnePreDistortionFilter.m */,
+				4E45E7271A9EE90E00E10648 /* KAVROneView.h */,
+				4E45E7281A9EE90E00E10648 /* KAVROneView.m */,
+				4E45E7291A9EE90E00E10648 /* LuT */,
+				4E45E7301A9EE90E00E10648 /* Shader */,
+			);
+			name = SDK;
+			path = ../../../SDK;
+			sourceTree = "<group>";
+		};
+		4E45E7291A9EE90E00E10648 /* LuT */ = {
+			isa = PBXGroup;
+			children = (
+				4E45E72A1A9EE90E00E10648 /* LUT_XB.png */,
+				4E45E72B1A9EE90E00E10648 /* LUT_XG.png */,
+				4E45E72C1A9EE90E00E10648 /* LUT_XR.png */,
+				4E45E72D1A9EE90E00E10648 /* LUT_YB.png */,
+				4E45E72E1A9EE90E00E10648 /* LUT_YG.png */,
+				4E45E72F1A9EE90E00E10648 /* LUT_YR.png */,
+			);
+			path = LuT;
+			sourceTree = "<group>";
+		};
+		4E45E7301A9EE90E00E10648 /* Shader */ = {
+			isa = PBXGroup;
+			children = (
+				4E45E7311A9EE90E00E10648 /* vrOneLuTDistortion.kernel */,
+			);
+			path = Shader;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4E45E6E31A9EDE5D00E10648 /* KAVROneSDKDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E45E7071A9EDE5D00E10648 /* Build configuration list for PBXNativeTarget "KAVROneSDKDemo" */;
+			buildPhases = (
+				4E45E6E01A9EDE5D00E10648 /* Sources */,
+				4E45E6E11A9EDE5D00E10648 /* Frameworks */,
+				4E45E6E21A9EDE5D00E10648 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KAVROneSDKDemo;
+			productName = KAVROneSDKDemo;
+			productReference = 4E45E6E41A9EDE5D00E10648 /* KAVROneSDKDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4E45E6FC1A9EDE5D00E10648 /* KAVROneSDKDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E45E70A1A9EDE5D00E10648 /* Build configuration list for PBXNativeTarget "KAVROneSDKDemoTests" */;
+			buildPhases = (
+				4E45E6F91A9EDE5D00E10648 /* Sources */,
+				4E45E6FA1A9EDE5D00E10648 /* Frameworks */,
+				4E45E6FB1A9EDE5D00E10648 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4E45E6FF1A9EDE5D00E10648 /* PBXTargetDependency */,
+			);
+			name = KAVROneSDKDemoTests;
+			productName = KAVROneSDKDemoTests;
+			productReference = 4E45E6FD1A9EDE5D00E10648 /* KAVROneSDKDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4E45E6DC1A9EDE5D00E10648 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Kai Aras";
+				TargetAttributes = {
+					4E45E6E31A9EDE5D00E10648 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					4E45E6FC1A9EDE5D00E10648 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 4E45E6E31A9EDE5D00E10648;
+					};
+				};
+			};
+			buildConfigurationList = 4E45E6DF1A9EDE5D00E10648 /* Build configuration list for PBXProject "KAVROneSDKDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4E45E6DB1A9EDE5D00E10648;
+			productRefGroup = 4E45E6E51A9EDE5D00E10648 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4E45E6E31A9EDE5D00E10648 /* KAVROneSDKDemo */,
+				4E45E6FC1A9EDE5D00E10648 /* KAVROneSDKDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4E45E6E21A9EDE5D00E10648 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E45E6F31A9EDE5D00E10648 /* Main.storyboard in Resources */,
+				4E45E7391A9EE90E00E10648 /* LUT_YR.png in Resources */,
+				4E45E7381A9EE90E00E10648 /* LUT_YG.png in Resources */,
+				4E45E6F81A9EDE5D00E10648 /* LaunchScreen.xib in Resources */,
+				4E45E6F51A9EDE5D00E10648 /* Images.xcassets in Resources */,
+				4E45E7371A9EE90E00E10648 /* LUT_YB.png in Resources */,
+				4E45E73A1A9EE90E00E10648 /* vrOneLuTDistortion.kernel in Resources */,
+				4E45E7361A9EE90E00E10648 /* LUT_XR.png in Resources */,
+				4E45E7351A9EE90E00E10648 /* LUT_XG.png in Resources */,
+				4E45E7341A9EE90E00E10648 /* LUT_XB.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E45E6FB1A9EDE5D00E10648 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4E45E6E01A9EDE5D00E10648 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E45E6F01A9EDE5D00E10648 /* ViewController.m in Sources */,
+				4E45E7331A9EE90E00E10648 /* KAVROneView.m in Sources */,
+				4E45E7321A9EE90E00E10648 /* KAVROnePreDistortionFilter.m in Sources */,
+				4E45E6ED1A9EDE5D00E10648 /* AppDelegate.m in Sources */,
+				4E45E6EA1A9EDE5D00E10648 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E45E6F91A9EDE5D00E10648 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E45E7041A9EDE5D00E10648 /* KAVROneSDKDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4E45E6FF1A9EDE5D00E10648 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4E45E6E31A9EDE5D00E10648 /* KAVROneSDKDemo */;
+			targetProxy = 4E45E6FE1A9EDE5D00E10648 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4E45E6F11A9EDE5D00E10648 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E45E6F21A9EDE5D00E10648 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4E45E6F61A9EDE5D00E10648 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E45E6F71A9EDE5D00E10648 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4E45E7051A9EDE5D00E10648 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4E45E7061A9EDE5D00E10648 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4E45E7081A9EDE5D00E10648 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KAVROneSDKDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4E45E7091A9EDE5D00E10648 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KAVROneSDKDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4E45E70B1A9EDE5D00E10648 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KAVROneSDKDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KAVROneSDKDemo.app/KAVROneSDKDemo";
+			};
+			name = Debug;
+		};
+		4E45E70C1A9EDE5D00E10648 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KAVROneSDKDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KAVROneSDKDemo.app/KAVROneSDKDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4E45E6DF1A9EDE5D00E10648 /* Build configuration list for PBXProject "KAVROneSDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E45E7051A9EDE5D00E10648 /* Debug */,
+				4E45E7061A9EDE5D00E10648 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E45E7071A9EDE5D00E10648 /* Build configuration list for PBXNativeTarget "KAVROneSDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E45E7081A9EDE5D00E10648 /* Debug */,
+				4E45E7091A9EDE5D00E10648 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4E45E70A1A9EDE5D00E10648 /* Build configuration list for PBXNativeTarget "KAVROneSDKDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E45E70B1A9EDE5D00E10648 /* Debug */,
+				4E45E70C1A9EDE5D00E10648 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4E45E6DC1A9EDE5D00E10648 /* Project object */;
+}

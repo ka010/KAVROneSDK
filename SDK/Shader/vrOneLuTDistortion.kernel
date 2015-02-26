@@ -1,0 +1,86 @@
+
+float DecodeFloatRGB(vec3 rgb) {
+return dot(rgb, vec3(1.0,1.0/255.0,1.0/65025.0));
+}
+
+float mirrored(float coord) {
+    return 1.0f - coord;
+}
+
+
+kernel vec4 vrOne (sampler image, float isMirrored, sampler LuT_XB,  sampler LuT_YB,  sampler LuT_XG,  sampler LuT_YG,  sampler LuT_XR,  sampler LuT_YR) {
+
+bool mirror = isMirrored == 1.0 ? true : false;
+vec3 ret = vec3(0.0,0.0,0.0);
+
+
+vec2 dc = destCoord();
+
+
+//if (mirror)
+//  dc.x -= 75.0;
+
+vec2 sc = samplerTransform(LuT_XB,dc);
+vec2 lsc = samplerTransform(LuT_XB,destCoord());
+
+lsc = mirror ? vec2(mirrored(lsc.x),lsc.y) : lsc;
+
+
+// sample from LuTs
+vec3 xb = sample(LuT_XB,lsc).rgb;
+vec3 yb = sample(LuT_YB,lsc).rgb;
+
+vec3 xg = sample(LuT_XG,lsc).rgb;
+vec3 yg = sample(LuT_YG,lsc).rgb;
+
+vec3 xr = sample(LuT_XR,lsc).rgb;
+vec3 yr = sample(LuT_YR,lsc).rgb;
+
+
+
+
+float lookupXR = DecodeFloatRGB(xr);
+float lookupYR = DecodeFloatRGB(yr);
+vec2 R;
+if (mirror)
+    R = vec2(mirrored(lookupXR),lookupYR) ;
+else
+    R = vec2(lookupXR,lookupYR);
+if (R.x <= 0.0 || R.y <= 0.0) {
+    return vec4(ret,1.0);
+}
+
+
+float lookupXG = DecodeFloatRGB(xg);
+float lookupYG = DecodeFloatRGB(yg);
+vec2 G;
+if (mirror)
+    G = vec2(mirrored(lookupXG),lookupYG) ;
+else
+    G = vec2(lookupXG,lookupYG);
+if (G.x <= 0.0 || G.y <= 0.0) {
+    return vec4(ret,1.0);
+}
+
+
+float lookupXB = DecodeFloatRGB(xb);
+float lookupYB = DecodeFloatRGB(yb);
+vec2 B;
+if (mirror)
+    B = vec2(mirrored(lookupXB),lookupYB) ;
+else
+    B = vec2(lookupXB,lookupYB);
+if (B.x <= 0.0 || B.y <= 0.0) {
+    return vec4(ret,1.0);
+}
+
+
+
+float RR = unpremultiply(sample(image,R)).r;
+float GG = unpremultiply(sample(image,G)).g;
+float BB = unpremultiply(sample(image,B)).b;
+
+vec4 res = premultiply(vec4(RR, GG,BB, 1.0));
+
+return res;
+}
