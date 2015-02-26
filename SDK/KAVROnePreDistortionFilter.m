@@ -66,9 +66,9 @@ static CIImage *LuT_YR = nil;
     return [[self _kernel]applyWithExtent:extend roiCallback:^CGRect(int index, CGRect rect) {
         // the kernel will use this rect when mapping pixel to world coordinates in the samplerTransform() call
         if (index == 0) {
-            return  _inputImage.extent; // dimensions of your input image
+            return  _inputImage.extent; // dimensions of our input image
         }else {
-            return LuT_XB.extent; // all the LuTs have the same dimensions so we don't need a separate if for each
+            return LuT_XB.extent; // all the LuTs have the same dimensions so we don't need a separate if for each of them
         }
         
     } arguments:@[_inputImage, @(_mirrorFlag), LuT_XB, LuT_YB, LuT_XG, LuT_YG, LuT_XR, LuT_YR]];
